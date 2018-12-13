@@ -1,4 +1,5 @@
 node {
+	checkout scm
     try {
         stage('Test') {
             sh './gradlew check'
